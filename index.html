@@ -254,8 +254,15 @@ var options = {
         document.getElementById('last-updated').innerText = 'Error fetching update time. Please check the repository details.';
     }
   }
-  
-      
+  // Function to verify the last update tikme by re-fetching it from the API
+  async function verifyLastUpdatedTime() {
+      document.getElementById('last-updated').innerText = 'Verifying...';
+      await getLastUpdatedTime();
+      alert("Last modified time has been successfully verified from GitHub API.");
+  }
+  // initial load to display the time on page load
+  window.onload = getLastUpdatedTime;
+</script>  
 
     
             
