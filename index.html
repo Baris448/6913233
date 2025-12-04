@@ -98,28 +98,33 @@ However, this abstraction comes with risk. When developers are unaware of how th
 
   
 <h4>Advantages</h4>
+<p id="Advantages_InText">
 Vibe coding has a revolutionary potential for major advantages in productivity, creativity, and accessibility. Developers report productivity increases by 10 times for prototypes and experimental applications. Karpathy (Kitishian, 2025) suggested reasoning as AI allows humans to “care about the bigger picture” rather than manual syntax.
 Klover.ai report (Kitishian, 2025) outlines other benefits: faster experimentation, reduced boilerplate [8], and better integration between design intent and software output. This compares to historical technological shifts, such as the introduction of graphical user interfaces, replacing command-line interaction.
 Vibe coding aligns with the ongoing movement toward natural-language programming, coding using human languages. Making programming more accessible to non-experts (Pajo, 2025). Offering a significant reduction in development time and conceptual overhead.
 
   
 <h4>Criticisms and Risks</h4>
+<p id="Risks_InText">
 Despite appeals, vibe coding raises serious concerns. The biggest criticism is that developers are losing code comprehension. As developers increasingly rely on AI-generated code, over time, they might lose the ability to understand and validate software systems (Horvat, 2025). Pajo warns that this would undermine accountability and system integrity. (Pajo, 2025)
 Szymanski states that vibe-coded projects accumulate technical debt rapidly, as generated code often gets undocumented, and is often generated as a single block of code, which is not very efficient (Szymanski, 2025). AI-generated repositories frequently include hard-coded secrets, insecure dependencies, and inefficient architectures. Without expertise review, these vulnerabilities can propagate unchecked and cause breakdowns and errors (Moore & Tatonetti, 2025) (Sabra et al., 2025).
 Ethical considerations such as determining the responsibility in case AI-generated system failure. Who will be responsible, the developer, organisation/company, or AI systems? Vibe coding “reconfigures the moral and professional boundaries of authorship in software systems,” requiring new laws and ethical considerations (Meske et al., 2025).
 
   
 <h4>Appropriate Use</h4>
+<p id="Use_InText">
 Vibe coding is context-dependent and proficient in speed and experimentation, making it useful in academic research and for startup projects. Unsuitable for mission-critical and for regulation-requiring tasks, such as healthcare and finance (Horvat, 2025) (Szymanski, 2025).
 For using vibe coding, a hybrid workflow is proposed, which combines AI-generated code acting as scaffolding, alongside human-created architecture (Pajo, 2025). This model retains the advantages of AI automation while reducing potential risks through validation and human oversight. As Karpathy states, “It’s not that we stop caring about code—it’s that we let AI handle the boilerplate so humans can care about the bigger picture” (Kitishian, 2025). 
 
   
 <h4>Cultural and Legal Implications</h4>
+<p id="Cultural_InText">
 Vibe coding is more than an innovation; it represents a cultural and philosophical shift in software principles. It reframes programming as an act of expression rather than construction. As Meske et al. note, it moves programming closer to conversation than computation (Meske et al., 2025).
 However, this shift causes intellectual work in software development to disappear. Karpathy (Kitishian, 2025) refers to vibe coding as a disengaged practice where developers do not even know there is code. The biggest challenge is in maintaining a high-level critical understanding within this new workflow.
 Vibe coding’s future lies in AI literacy, AI’s capacity to guide, and inspect. This distinguishes effective collaboration from automation.
   
 <h4>Conclusion</h4>
+<p id="Conclusion_InText">
 Empowerment and dependency are combined by vibe coding. While revolutionising speed and accessibility, it threatens developers’ code comprehension and accountability. As AI tools develop, the challenge for developers and educators will balance efficiency with understanding.
 Whether it becomes a new coding standard or a trend of “idle programming”, it will depend on human discipline and critical oversight. When used responsibly, vibe coding may indeed represent the next step in human–machine collaboration, where software creation is not written but spoken.
 </p>
@@ -215,8 +220,13 @@ Whether it becomes a new coding standard or a trend of “idle programming”, i
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     const RoleCount = displayWordCount("Role_InText");
+    const AdvantageCount = displayWordCount("Advantage_InText");
+    const RisksCount = displayWordCount("Risks_InText");
+    const UseCount = displayWordCount("Use_InText");
+    const CulturalCount = displayWordCount("Cultural_InText");
+    const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + RoleCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + RoleCount + AdvantageCount + RisksCount + UseCount + CulturalCount + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
