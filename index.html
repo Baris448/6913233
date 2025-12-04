@@ -76,22 +76,25 @@ Karpathy, A introduced the term vibe coding in 2025, describing a transformative
 
   
 <h3 id="Introduction">Introduction</h3>
-<p class="ex2">  
+<p id="Introduction_InText">
 The term “vibe coding” was first coined by the well-respected AI researcher and Computer Scientist Andrej Karpathy in February 2025. He defines it as a new software development paradigm where developers use AI tools and communicate through natural human languages to state their high-level intent rather than writing the computer code (Kitishian, 2025). 
-This marks a revolutionary shift in software development. Rather than using logic and algorithmic thinking, software developers become “conceptual directors”. This means developers become guides articulating program intent, while AI implements it. The key is no longer programming in specific languages but the ability to articulate the required outcome by following the “vibe” and evaluating AI-generated code (Horvat, 2025). Vibe coding provoked significant debate amongst computer scientists. Proponents describe it as a major advancement and an accessible way for software creation, while critics warn that it is “idle programming” (Smith, 2025) (Szymanski, 2025).
+This marks a revolutionary shift in software development. Rather than using logic and algorithmic thinking, software developers become “conceptual directors”. This means developers become guides articulating program intent, while AI implements it. The key is no longer programming in specific languages but the ability to articulate the required outcome by following the “vibe” and evaluating AI-generated code (Horvat, 2025). Vibe coding provoked significant debate amongst computer scientists. Proponents describe it as a major advancement and an accessible way for software creation, while critics warn that it is “idle programming” (Smith, 2025) (Szymanski, 2025).</p>
 
 
 <h3 id="Analysis and discussion">Analysis and discussion</h3>
-<p class="ex3"> 
+<p id="Analysis_InText"> 
 A 2025 study on ResearchGate formalised vibe coding as a “software development paradigm in which developers express their intentions about the software product using natural language”, created through a generative model, and formed into executable code (Horvat, 2025). Meske, C. et al. described context as “reconfiguration of intent mediation in software development,” comparing it to earlier developments in coding that advanced programming from machine code (0s and 1s) to human-readable syntax such as MATLAB (Meske et al., 2025).
-Practically, vibe coding is unfolded by iterative prompting, code execution (running code), and logical refinement. Developers issue feedback on AI-generated code. Examples are “optimise database queries” or “add user authentication,” with AI modifying the existing code autonomously. The emphasis moves from writing code to collaborating with AI through dialogue (Horvat, 2025). 
-Following workflow is used: 
-<img src="VibeCoding.JPG" alt="" width="500" height="333">  <p> (Sapkota, 2025)</p>
+Practically, vibe coding is unfolded by iterative prompting, code execution (running code), and logical refinement. Developers issue feedback on AI-generated code. Examples are “optimise database queries” or “add user authentication,” with AI modifying the existing code autonomously. The emphasis moves from writing code to collaborating with AI through dialogue (Horvat, 2025). Following workflow is used: </p>
+<pre>
+<img src="VibeCoding.JPG" alt="" width="500" height="333">
+</pre>
+<p> (Sapkota, 2025)</p>
 
   
 <h4>The Changing Role of the Programmer</h4>
+<p id="Role_InText">
 Ad hoc software development, logic and manual control are key skills for developers. Vibe coding changes required developer skills, who move from creating code to curating (Pajo, 2025). In their article, Moore & Tatonetti noted that the focus shifts from human syntax mastery to human–AI interaction. (Moore & Tatonetti, 2025) This transition reduces the need for technical knowledge. In addition, non-technical people can now prototype applications through conversational interfaces with AI (Pajo, 2025). Consequently, vibe coding makes programming more accessible to people, allowing previously excluded non-technical people to take part in software creation.
-However, this abstraction comes with risk. When developers are unaware of how their code operates, debugging and long-term maintenance become increasingly difficult (Horvat, 2025). This gets worse for non-technical people who have no expertise in programming.
+However, this abstraction comes with risk. When developers are unaware of how their code operates, debugging and long-term maintenance become increasingly difficult (Horvat, 2025). This gets worse for non-technical people who have no expertise in programming.</p>
 
   
 <h4>Advantages</h4>
@@ -115,7 +118,6 @@ For using vibe coding, a hybrid workflow is proposed, which combines AI-generate
 Vibe coding is more than an innovation; it represents a cultural and philosophical shift in software principles. It reframes programming as an act of expression rather than construction. As Meske et al. note, it moves programming closer to conversation than computation (Meske et al., 2025).
 However, this shift causes intellectual work in software development to disappear. Karpathy (Kitishian, 2025) refers to vibe coding as a disengaged practice where developers do not even know there is code. The biggest challenge is in maintaining a high-level critical understanding within this new workflow.
 Vibe coding’s future lies in AI literacy, AI’s capacity to guide, and inspect. This distinguishes effective collaboration from automation.
-
   
 <h4>Conclusion</h4>
 Empowerment and dependency are combined by vibe coding. While revolutionising speed and accessibility, it threatens developers’ code comprehension and accountability. As AI tools develop, the challenge for developers and educators will balance efficiency with understanding.
@@ -189,7 +191,7 @@ Whether it becomes a new coding standard or a trend of “idle programming”, i
 </script>
 
 
- <!-- //////////////////////////////////////////////////////////////////////////////// -->
+  <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Word count function ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
 <!-- Placeholder for total word count -->
@@ -212,15 +214,15 @@ Whether it becomes a new coding standard or a trend of “idle programming”, i
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const RoleCount = displayWordCount("Role_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + RoleCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
-
 </body>
 </html>
 
